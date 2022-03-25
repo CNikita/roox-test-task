@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.main-app-container {
+  display: flex;
+  justify-content: center;
+  background: #E5E5E5;
+  min-height: 100vh;
+}

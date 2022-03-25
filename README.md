@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Тестовое задание для соискателя на должность frontend-разработчика
+[Данные пользователей](https://jsonplaceholder.typicode.com/users)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Ссылка на макет](https://www.figma.com/file/X8Ke95Xuc9ZXrZJ3DzQjOW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?node-id=2%3A2)
 
-## Available Scripts
+## Необходимо сверстать предложенный макет, и написать простое SPA на React 16, используя следующие инструменты, технологии и подходы:
 
-In the project directory, you can run:
+- Компонентное использование CSS
+- Большим плюсом реализовать SPA с использованием TypeScript, но не обязательно
+- Препроцессор scss
+- Переиспользование блоков
+- Разделение кода на React-компоненты (презентационные и компоненты-контейнеры) 
+- Webpack
+    
+**Ждем от тебя ссылку на Github с данным тестовым заданием.**
 
-### `npm start`
+По всем вопросам можете обращаться к HR Александру Суханцову.<br>
+Контакты:<br>
+телегам @roox_hr
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<aside>
+💡 Попробуйте написать модульный, изолированный, повторно-используемый код.
+</aside>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **Задание на вёрстку выглядит следующим образом:**
 
-### `npm test`
+Необходимо сверстать две страницы “Список пользователей” и “Профиль пользователя”
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Список пользователей:**
+1. Вывести 10 пользователей соответственно макету. Данные взять  с [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+2. Пока идет загрузка списка пользователей должен быть индикатор загрузки( дизайн любой на усмотрение исполнителя )
+3. Вывести на карточку: 
+    - name
+    - address.city
+    - company.name
+4. Кнопка “Подробнее” должна вести на “Профиль пользователя”
+5. Реализовать фильтрацию списка по признаку Name и City в алфавитном порядке
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Профиль пользователя:**
+1. Вывести в профиле:
+    - name
+    - username
+    - email
+    - address.street
+    - address.city
+    - address.zipcode
+    - phone
+    - website
+2. Все поля формы, кроме Comment, должны быть предзаполнены из [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
+3. Реализовать кнопку изменить, изначально поля должны быть readonly, после нажатия на кнопку поля можно редактировать
+4. Реализовать валидацию на клиенте
+5. Все поля формы, кроме поля Comment, обязательны для заполнения
+6. Из данных формы при отправке нужно сформировать JSON и вывести его в консоль.

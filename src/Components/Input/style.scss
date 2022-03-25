@@ -1,0 +1,17 @@
+.input-element {
+    margin-top: 10px;
+    div {
+        font-size: 8px;
+        text-transform: capitalize;
+    }  
+}
+
+input {
+    &:invalid:required{
+        border-color: #D91313;
+        color: #D91313;
+    }
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+    font-size: 10px;
+}
