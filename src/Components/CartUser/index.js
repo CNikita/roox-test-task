@@ -12,7 +12,7 @@ export default function CartUser({ item }) {
                 <div>компания: <span>{companyName}</span></div>
             </div>
             <div className="cart-user__details">
-                <Link to={`/${id}`}key={id}>
+                <Link to={`/${id}`} key={id}>
                     Подробнее
                 </Link>
             </div>
